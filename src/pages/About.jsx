@@ -40,7 +40,7 @@ const About = () => {
           <p className="text-gray-700 mb-4">
             Whether you’re a tech enthusiast, a professional, or just looking for something cool and functional — Tech Nest has something for everyone.
           </p>
-         <Link to={'/products'}><button className="bg-red-600 text-white px-6 py-2 rounded-xl hover:bg-red-700 transition duration-300">
+         <Link to={'/products'}><button className="bg-red-600 text-white px-6 py-2 rounded-xl hover:bg-red-700 transition duration-300 cursor-pointer">
             Start Shopping
           </button></Link> 
         </div>
