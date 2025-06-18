@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className='bg-gray-900 text-gray-200 py-10'>
       <div className='max-w-7xl mx-auto px-4 md:flex md:justify-between'>
         {/*  info */}
-        <div className='mb-6 md:mb-0'>
+        <div className='mb-6 md:mb-0 px-2'>
             <Link to='/'>
               {/* <img src={Logo} alt="" className='w-32'/> */}
               <h1 className='text-red-500 text-2xl font-bold'>Tech Nest</h1>
@@ -19,7 +19,7 @@ const Footer = () => {
             <p className='text-sm'>Phone: +91 8739027628</p>
         </div>
         {/* customer service link */}
-        <div className='mb-6 md:mb-0'>
+        <div className='mb-6 md:mb-0 px-2'>
             <h3 className='text-xl font-semibold'>Customer Service</h3>
             <ul className='mt-2 text-sm space-y-2'>
                 <li>Contact Us</li>
@@ -30,7 +30,7 @@ const Footer = () => {
             </ul>
         </div>
         {/* social media links */}
-        <div className='mb-6 md:mb-0'>
+        <div className='mb-6 md:mb-0 px-2'>
             <h3 className='text-xl font-semibold'>Follow Us</h3>
             <div className='flex space-x-4 mt-2 text-xl'>
                 <FaFacebook/>
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
         </div>
         {/* newsletter subscription */}
-        <div>
+        <div className='mb-6 md:mb-0 px-2'>
             <h3 className='text-xl font-semibold'>Stay in the Loop</h3>
             <p className='mt-2 text-sm'>Subscribe to get special offers, free giveaways, and more</p>
             <form action="" className='mt-4 flex'>
