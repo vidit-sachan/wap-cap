@@ -21,7 +21,7 @@ const Navbar = ({location, getLocation, openDropdown, setOpenDropdown}) => {
         <div className='bg-white py-3 shadow-2xl px-4 md:px-0'>
             <div className='max-w-6xl mx-auto flex justify-between items-center'>
                 {/* logo section */}
-                <div className='flex gap-7 items-center'>
+                <div className='flex gap-7 items-center px-2'>
                     <Link to={'/'}><h1 className='font-bold text-3xl'><span className='text-red-500 font-serif'>Tech </span><span>Nest</span></h1></Link>
                     <div className='flex gap-1 cursor-pointer text-gray-700 items-center hidden md:flex'>
                         <MapPin className=' text-red-500' />
@@ -39,7 +39,7 @@ const Navbar = ({location, getLocation, openDropdown, setOpenDropdown}) => {
                     }
                 </div>
                 {/* menu section */}
-                <nav className='flex gap-7 items-center'>
+                <nav className='flex gap-7 items-center pr-2'>
                     <ul className='flex gap-7 items-center text-xl font-semibold hidden md:flex'>
                         <NavLink to={'/'} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-red-500" : "text-black"} cursor-pointer`}><li>Home</li></NavLink>
                         <NavLink to={'/products'} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-red-500" : "text-black"} cursor-pointer`}><li>Products</li></NavLink>
