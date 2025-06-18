@@ -103,7 +103,7 @@ const Cart = ({location, getLocation}) => {
                   </div>
                   <hr className='text-gray-200 mt-2'/>
                   <div className='flex justify-between items-center'>
-                    <h1 className='font-semibold text-lg'>Grand Total</h1>
+                    <h1 className='font-semibold text-lg'>Total Amount</h1>
                     <p className='font-semibold text-lg'>${totalPrice + 5}</p>
                   </div>
                   <div>
