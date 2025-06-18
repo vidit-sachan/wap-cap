@@ -49,7 +49,7 @@ const SingleProduct = () => {
                     <div className='flex flex-col gap-6'>
                         <h1 className='md:text-3xl text-xl font-bold text-gray-800 '>{SingleProduct.title}</h1>
                         <div className='text-gray-700'>
-                            {SingleProduct.brand?.toUpperCase()} /{SingleProduct.category.toUpperCase()} /{SingleProduct.model}
+                            {SingleProduct.brand?.toUpperCase()}/ {SingleProduct.category.toUpperCase()}/ {SingleProduct.model}
                         </div>
                         <p className='text-xl text-red-500 font-bold'>${SingleProduct.price} <span className='line-through text-gray-700'> ${OriginalPrice} </span><span className='text-white'>a
                             
