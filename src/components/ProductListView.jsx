@@ -7,6 +7,20 @@ const ProductListView = ({product}) => {
   const navigate = useNavigate()
   const {addToCart} = useCart()
 
+  const today = new Date()
+  const tomorrow = new Date(today)
+  tomorrow.setDate(today.getDate() + 1)
+
+  const freeDeliveryDate = new Date(today)
+  freeDeliveryDate.setDate(today.getDate() + 3)
+
+  const formatDate = (date) =>
+    date.toLocaleDateString('en-IN', {
+      weekday: 'short', 
+      day: 'numeric',    
+      month: 'long'     
+    })
+
   return (
     <div className='space-y-4 mt-2 rounded-md'>
       <div className='bg-gray-100 flex gap-7 items-center p-2 rounded-md'>
@@ -14,8 +28,8 @@ const ProductListView = ({product}) => {
         <div className='space-y-2'>
           <h1 className='font-bold md:text-xl text-lg line-clamp-3 hover:text-red-400 md:w-full w-[220px]'>{product.title}</h1>
           <p className='font-semibold flex items-center md:text-lg text-sm'>$<span className='md:text-4xl text-3xl'>{product.price}</span> ({product.discount}% off)</p>
-          <p className='text-sm'>FREE delivery <span className='font-semibold'>Tue, 10 June</span> <br />
-          Or fastest delivery <span className='font-semibold'>Tomorrow, 9 June</span></p>
+          <p className='text-sm'>FREE delivery <span className='font-semibold'>{formatDate(freeDeliveryDate)}</span> <br />
+          Or fastest delivery <span className='font-semibold'>Tomorrow, {formatDate(tomorrow)}</span></p>
           <button onClick={()=>addToCart(product)} className='bg-red-500 text-white px-3 py-1 rounded-md cursor-pointer'>Add to Cart</button>
         </div>
       </div>
